@@ -1,0 +1,6 @@
+framework module JKUIEventHandler {
+  umbrella header "JKUIEventHandler-umbrella.h"
+
+  export *
+  module * { export * }
+}
