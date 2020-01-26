@@ -21,8 +21,10 @@ typedef NS_ENUM(NSInteger, JKUIEventResult)
 /// 接收到链式事件
 /// @param eventName 事件名称
 /// @param data 数据
+/// @param responder 第一响应者
 - (JKUIEventResult)jk_receiveChainEvent:(nonnull NSString *)eventName
-                        data:(nullable id)data;
+                        data:(nullable id)data
+                   responder:(nonnull __kindof UIResponder *)responder;
 
 /// 接收广播事件
 /// @param eventName 事件名称
