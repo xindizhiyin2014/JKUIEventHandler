@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JKUIEventHandler'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'this is a tool,it use to dlivery event depend on responder chain,and view tree.'
 
 # This description is used to generate tags and improve search results.
