@@ -7,6 +7,8 @@
 
 #ifndef JKUIEventProtocol_h
 #define JKUIEventProtocol_h
+#import "JKUIEventModel.h"
+
 typedef NS_ENUM(NSInteger, JKUIEventResult)
 {
  JKUIEventResultIgnore = 0,       /// 忽略事件,事件会继续传递，直到结束
@@ -21,16 +23,14 @@ typedef NS_ENUM(NSInteger, JKUIEventResult)
 /// 接收到链式事件
 /// @param eventName 事件名称
 /// @param data 数据
-/// @param responder 第一响应者
 - (JKUIEventResult)jk_receiveChainEvent:(nonnull NSString *)eventName
-                        data:(nullable id)data
-                   responder:(nonnull __kindof UIResponder *)responder;
+                                   data:(nullable id)data;
 
 /// 接收广播事件
 /// @param eventName 事件名称
 /// @param data 数据
 - (JKUIEventResult)jk_receiveBroadcastEvent:(nonnull NSString *)eventName
-                            data:(nullable id)data;
+                                       data:(nullable id)data;
 
 @end
 #endif /* JKUIEventProtocol_h */

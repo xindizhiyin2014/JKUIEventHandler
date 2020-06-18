@@ -154,6 +154,8 @@
 		B9161BFE6F0299FDF02F097ED8EC904E /* KWInequalityMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7D9375CE42BD6DBF5328EFBEE3549C /* KWInequalityMatcher.m */; };
 		BB035E1FE93185F9259EF1DD9CC16F8A /* KWBeTrueMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 671B9840E09AB9AB345D0B9BF6305F7F /* KWBeTrueMatcher.m */; };
 		BC947B8BE47D3AD0B2D25F8A779E73C2 /* KWUserDefinedMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 53B0746D643A72EB34BDC87EB79179A9 /* KWUserDefinedMatcher.m */; };
+		BD223050249B0DE9008845C6 /* JKUIEventModel.h in Headers */ = {isa = PBXBuildFile; fileRef = BD22304E249B0DE9008845C6 /* JKUIEventModel.h */; };
+		BD223051249B0DE9008845C6 /* JKUIEventModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BD22304F249B0DE9008845C6 /* JKUIEventModel.m */; };
 		BDAE53DB23D56B290019AC98 /* JKUIEventHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = BDAE53D923D56B290019AC98 /* JKUIEventHandler.h */; };
 		BDAE53DC23D56B290019AC98 /* JKUIEventHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = BDAE53DA23D56B290019AC98 /* JKUIEventHandler.m */; };
 		BDAE53DE23D56B790019AC98 /* JKUIEventProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = BDAE53DD23D56B790019AC98 /* JKUIEventProtocol.h */; };
@@ -409,6 +411,8 @@
 		BA883BB1C387E9D55982934B17C73A4E /* KWBlockRaiseMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWBlockRaiseMatcher.h; path = Classes/Matchers/KWBlockRaiseMatcher.h; sourceTree = "<group>"; };
 		BB08DB370A82748C1862C44DB46989B4 /* KWNotificationMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWNotificationMatcher.h; path = Classes/Matchers/KWNotificationMatcher.h; sourceTree = "<group>"; };
 		BC3E948BC3354605012A8A711C77391D /* KWProbe.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWProbe.h; path = Classes/Core/KWProbe.h; sourceTree = "<group>"; };
+		BD22304E249B0DE9008845C6 /* JKUIEventModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JKUIEventModel.h; path = JKUIEventHandler/Classes/JKUIEventModel.h; sourceTree = "<group>"; };
+		BD22304F249B0DE9008845C6 /* JKUIEventModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = JKUIEventModel.m; path = JKUIEventHandler/Classes/JKUIEventModel.m; sourceTree = "<group>"; };
 		BD4F89063C8B8F965FA2C1FA18AF4863 /* KWFutureObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWFutureObject.h; path = Classes/Core/KWFutureObject.h; sourceTree = "<group>"; };
 		BDAE53D923D56B290019AC98 /* JKUIEventHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JKUIEventHandler.h; path = JKUIEventHandler/Classes/JKUIEventHandler.h; sourceTree = "<group>"; };
 		BDAE53DA23D56B290019AC98 /* JKUIEventHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = JKUIEventHandler.m; path = JKUIEventHandler/Classes/JKUIEventHandler.m; sourceTree = "<group>"; };
@@ -777,6 +781,8 @@
 				BDAE53D923D56B290019AC98 /* JKUIEventHandler.h */,
 				BDAE53DA23D56B290019AC98 /* JKUIEventHandler.m */,
 				BDAE53DD23D56B790019AC98 /* JKUIEventProtocol.h */,
+				BD22304E249B0DE9008845C6 /* JKUIEventModel.h */,
+				BD22304F249B0DE9008845C6 /* JKUIEventModel.m */,
 			);
 			name = JKUIEventHandler;
 			path = ../..;
@@ -972,6 +978,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD223050249B0DE9008845C6 /* JKUIEventModel.h in Headers */,
 				10770F9201C59C465BEBAE3E75159FEF /* JKUIEventHandler-umbrella.h in Headers */,
 				BDAE53DB23D56B290019AC98 /* JKUIEventHandler.h in Headers */,
 				BDAE53DE23D56B790019AC98 /* JKUIEventProtocol.h in Headers */,
@@ -1231,6 +1238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDAE53DC23D56B290019AC98 /* JKUIEventHandler.m in Sources */,
+				BD223051249B0DE9008845C6 /* JKUIEventModel.m in Sources */,
 				4852D5C002A885AD80E3DB44E1173FC7 /* JKUIEventHandler-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

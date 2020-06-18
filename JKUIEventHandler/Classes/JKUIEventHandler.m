@@ -33,8 +33,8 @@
            && ![currentResponder isKindOfClass:[UIWindow class]]
            && ![currentResponder isKindOfClass:[UIApplication class]]) {
         if ([currentResponder conformsToProtocol:@protocol(JKUIEventProtocol)]) {
-            if ([currentResponder respondsToSelector:@selector(jk_receiveChainEvent:data:responder:)]) {
-                JKUIEventResult result = [currentResponder jk_receiveChainEvent:eventName data:data responder:responder];
+            if ([currentResponder respondsToSelector:@selector(jk_receiveChainEvent:data:)]) {
+                JKUIEventResult result = [currentResponder jk_receiveChainEvent:eventName data:data];
                 if (result == JKUIEventResultHandleDelivery
                     || result == JKUIEventResultIgnore) {// 事件继续传递
                    currentResponder = (UIResponder <JKUIEventProtocol>*)currentResponder.nextResponder;
