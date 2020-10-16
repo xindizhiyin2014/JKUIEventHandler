@@ -28,7 +28,7 @@
     if (![responder isKindOfClass:[UIResponder class]]) {
         return;
     }
-    UIResponder <JKUIEventProtocol>*currentResponder = (UIResponder <JKUIEventProtocol>*)responder.nextResponder;
+    UIResponder <JKUIEventProtocol>*currentResponder = (UIResponder <JKUIEventProtocol>*)responder.jk_nextResponder;
     while (currentResponder
            && ![currentResponder isKindOfClass:[UIWindow class]]
            && ![currentResponder isKindOfClass:[UIApplication class]]) {
@@ -37,15 +37,15 @@
                 JKUIEventResult result = [currentResponder jk_receiveChainEvent:eventName data:data];
                 if (result == JKUIEventResultHandleDelivery
                     || result == JKUIEventResultIgnore) {// 事件继续传递
-                   currentResponder = (UIResponder <JKUIEventProtocol>*)currentResponder.nextResponder;
+                   currentResponder = (UIResponder <JKUIEventProtocol>*)currentResponder.jk_nextResponder;
                 } else {
                     break;
                 }
             } else {
-               currentResponder = (UIResponder <JKUIEventProtocol>*)currentResponder.nextResponder;
+               currentResponder = (UIResponder <JKUIEventProtocol>*)currentResponder.jk_nextResponder;
             }
         } else {
-            currentResponder = (UIResponder <JKUIEventProtocol>*)currentResponder.nextResponder;
+            currentResponder = (UIResponder <JKUIEventProtocol>*)currentResponder.jk_nextResponder;
         }
     }
 }
