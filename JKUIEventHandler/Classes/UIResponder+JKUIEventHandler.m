@@ -25,10 +25,10 @@ static const void *jk_nextResponderKey = "jk_nextResponderKey";
 
 - (UIResponder *)jk_nextResponder
 {
-    if (self.nextResponder) {
-        return self.nextResponder;
-    } else {
-        return objc_getAssociatedObject(self, jk_nextResponderKey);
+    UIResponder *responser = objc_getAssociatedObject(self, jk_nextResponderKey);
+    if (responser) {
+        return responser;
     }
+    return self.nextResponder;
 }
 @end
