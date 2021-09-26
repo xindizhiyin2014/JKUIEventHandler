@@ -1,0 +1,6 @@
+framework module JKUIEventHandler_Swift {
+  umbrella header "JKUIEventHandler_Swift-umbrella.h"
+
+  export *
+  module * { export * }
+}

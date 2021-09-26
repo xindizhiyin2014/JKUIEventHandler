@@ -1,5 +1,5 @@
 #
-# Be sure to run `pod lib lint JKUIEventHandler.podspec' to ensure this is a
+# Be sure to run `pod lib lint JKUIEventHandler_Swift.podspec' to ensure this is a
 # valid spec before submitting.
 #
 # Any lines starting with a # are optional, but their use is encouraged
@@ -7,8 +7,8 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'JKUIEventHandler'
-  s.version          = '0.1.5.1'
+  s.name             = 'JKUIEventHandler_Swift'
+  s.version          = '0.1.6'
   s.summary          = 'this is a tool,it use to dlivery event depend on responder chain,and view tree.'
 
 # This description is used to generate tags and improve search results.
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-this is a tool,it use to dlivery event depend on responder chain,and view tree,it will update with the need.
+  this is a tool,it use to dlivery event depend on responder chain,and view tree,it will update with the need.
                        DESC
 
   s.homepage         = 'https://github.com/xindizhiyin2014/JKUIEventHandler'
@@ -28,12 +28,12 @@ this is a tool,it use to dlivery event depend on responder chain,and view tree,i
   s.source           = { :git => 'https://github.com/xindizhiyin2014/JKUIEventHandler.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
-  s.source_files = 'OC/JKUIEventHandler/Classes/**/*'
+  s.source_files = 'Swift/JKUIEventHandler_Swift/Classes/**/*'
   
   # s.resource_bundles = {
-  #   'JKUIEventHandler' => ['JKUIEventHandler/Assets/*.png']
+  #   'JKUIEventHandler_Swift' => ['JKUIEventHandler_Swift/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'

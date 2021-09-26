@@ -1,0 +1,6 @@
+framework module Pods_JKUIEventHandler_Swift_Example {
+  umbrella header "Pods-JKUIEventHandler_Swift_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

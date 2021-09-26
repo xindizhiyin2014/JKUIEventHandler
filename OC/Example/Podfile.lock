@@ -1,0 +1,23 @@
+PODS:
+  - JKUIEventHandler (0.1.5.1)
+  - Kiwi (3.0.0)
+
+DEPENDENCIES:
+  - JKUIEventHandler (from `../../`)
+  - Kiwi
+
+SPEC REPOS:
+  trunk:
+    - Kiwi
+
+EXTERNAL SOURCES:
+  JKUIEventHandler:
+    :path: "../../"
+
+SPEC CHECKSUMS:
+  JKUIEventHandler: 388dbe0d9c822a58dba5e217ca4c5f90688a251c
+  Kiwi: fbeafef0f00e4d8f7dcb3420a4930afe70af77f7
+
+PODFILE CHECKSUM: 77913da7fb50390709ad117bf9e488a964b9b4fd
+
+COCOAPODS: 1.10.1

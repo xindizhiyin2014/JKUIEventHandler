@@ -1,0 +1,27 @@
+PODS:
+  - JKUIEventHandler_Swift (0.1.0)
+  - Nimble (9.2.1)
+  - Quick (4.0.0)
+
+DEPENDENCIES:
+  - JKUIEventHandler_Swift (from `../../`)
+  - Nimble
+  - Quick
+
+SPEC REPOS:
+  trunk:
+    - Nimble
+    - Quick
+
+EXTERNAL SOURCES:
+  JKUIEventHandler_Swift:
+    :path: "../../"
+
+SPEC CHECKSUMS:
+  JKUIEventHandler_Swift: f59e47f169e9b878f8bc9495dbc3d48c5403bff3
+  Nimble: e7e615c0335ee4bf5b0d786685451e62746117d5
+  Quick: 6473349e43b9271a8d43839d9ba1c442ed1b7ac4
+
+PODFILE CHECKSUM: d8d79a8ca3ec65473a799e2dfcd15cbaa359fbe3
+
+COCOAPODS: 1.10.1
