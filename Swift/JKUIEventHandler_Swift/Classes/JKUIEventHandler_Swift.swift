@@ -6,7 +6,7 @@
 //
 
 import UIKit
-public protocol VVChainEventProtocol {
+public protocol JKChainEventProtocol {
     
     /// 接收到链式事件
     /// - Parameters:
@@ -15,7 +15,7 @@ public protocol VVChainEventProtocol {
     func jk_receiveChainEvent(eventName: String, data: Any?) -> Bool
 }
 
-public protocol VVBroadcastEventProtocol {
+public protocol JKBroadcastEventProtocol {
     
     /// 接收广播事件
     /// - Parameters:
@@ -30,7 +30,7 @@ public extension UIResponder {
         var responder = self.jk_nextResponder
         while let currentResponder = responder {
             if !currentResponder.isKind(of: UIWindow.self) && !currentResponder.isKind(of: UIApplication.self) {
-                if let handler = currentResponder as? VVChainEventProtocol {
+                if let handler = currentResponder as? JKChainEventProtocol {
                     if (handler.jk_receiveChainEvent(eventName: eventName, data: data)) {
                         responder = currentResponder.jk_nextResponder
                     } else {
@@ -48,7 +48,7 @@ public extension UIResponder {
     func broadcastEvent(eventName: String, data: Any?) {
         
         if let vc = self as? UIViewController {
-            if let responder = vc as? VVBroadcastEventProtocol {
+            if let responder = vc as? JKBroadcastEventProtocol {
                 if (!responder.jk_receiveBroadcastEvent(eventName: eventName, data: data)) {
                     return
                 }
@@ -58,7 +58,7 @@ public extension UIResponder {
                 subVc.broadcastEvent(eventName: eventName, data: data)
             }
             
-            if let subView = vc.view as? VVBroadcastEventProtocol {
+            if let subView = vc.view as? JKBroadcastEventProtocol {
                 if (!subView.jk_receiveBroadcastEvent(eventName: eventName, data: data)) {
                     return
                 }
@@ -68,7 +68,7 @@ public extension UIResponder {
                 subView.broadcastEvent(eventName: eventName, data: data)
             }
         } else if let view = self as? UIView {
-            if let responderView = view as? VVBroadcastEventProtocol {
+            if let responderView = view as? JKBroadcastEventProtocol {
                 if (!responderView.jk_receiveBroadcastEvent(eventName: eventName, data: data)) {
                     return
                 }
