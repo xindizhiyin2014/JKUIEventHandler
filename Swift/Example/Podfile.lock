@@ -1,5 +1,5 @@
 PODS:
-  - JKUIEventHandler_Swift (0.1.0)
+  - JKUIEventHandler_Swift (0.1.6)
   - Nimble (9.2.1)
   - Quick (4.0.0)
 
@@ -18,7 +18,7 @@ EXTERNAL SOURCES:
     :path: "../../"
 
 SPEC CHECKSUMS:
-  JKUIEventHandler_Swift: f59e47f169e9b878f8bc9495dbc3d48c5403bff3
+  JKUIEventHandler_Swift: 6fc1c61405d7367cc26aec3ef5ed0340b2b08177
   Nimble: e7e615c0335ee4bf5b0d786685451e62746117d5
   Quick: 6473349e43b9271a8d43839d9ba1c442ed1b7ac4
 

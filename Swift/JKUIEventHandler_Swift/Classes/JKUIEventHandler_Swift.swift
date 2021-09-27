@@ -54,7 +54,7 @@ public extension UIResponder {
                 }
             }
             
-            for subVc in vc.childViewControllers {
+            for subVc in vc.children {
                 subVc.broadcastEvent(eventName: eventName, data: data)
             }
             
