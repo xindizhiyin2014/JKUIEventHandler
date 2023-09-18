@@ -22,7 +22,7 @@ extension UIResponder {
             if let obj = objc_getAssociatedObject(self, &nextResponderKey) as? WeakWarp {
                 return obj.responder
             } else {
-                return nil
+                return self.next
             }
         }
         set {
